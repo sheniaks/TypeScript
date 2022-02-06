@@ -3,7 +3,7 @@ class MiniUser {
     constructor(public name: string) { }
   }
   const user1 = new MiniUser('Alex');
-  user1.age = 30;	// Property 'age' is private and only accessible within class 'MiniUser'.
+  //user1.age = 30;	// Property 'age' is private and only accessible within class 'MiniUser'.
   
   class MiniUser2 {
     private age: number = 28;

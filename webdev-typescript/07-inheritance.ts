@@ -1,27 +1,27 @@
-class User{
+class User23{
     private Nickname : string = "ashe";
     static secret = 1123;
     //constructor(public name? : string, public age : number) // A required parameter cannot follow an optional parameter.
     constructor(public name : string, public age : number) {
     }
     getPw() :string {
-      return `${this.name}${User.secret}${this.name}`;
+      return `${this.name}${User23.secret}${this.name}`;
     }
   }
   
-  class Alex extends User {
+  class Alex extends User23 {
     name : string = "Alex";
   
-    constructor(age: number){
-      super(name,age);
-    }
+    // constructor(age: number){
+    //   super(name,age);
+    // }
   
     getPw() :string {
-      return `${this.name}${User.secret}${this.age}`;
+      return `${this.name}${User23.secret}${this.age}`;
     }
   }
-  const random = new User('Random', 42);
-  const alex = new Alex(45); // Expected 2 arguments, but got 1.
+  const random = new User23('Random', 42);
+  //const alex33 = new Alex(45); // Expected 2 arguments, but got 1.
 
 
 
